@@ -9,7 +9,7 @@ Clone the repo.
 
 Download dataset at https://homepages.inf.ed.ac.uk/jyamagis/page3/page58/page58.html and place it in the data folder.
 
-Repository Structure
+### Repository Structure
 
 * `./data`: the data and the metadata (you should not need to touch this folder)
 * `./main`: the model and its respective utilites
@@ -27,7 +27,7 @@ python 3 main.py train -h
 python 3 main.py eval -h
 ```
 
-Argument Reference | train
+### Argument Reference | train
 
 ```
 -h, --help        
@@ -43,7 +43,13 @@ Argument Reference | train
 -n MIN_LR         min learning rate (only for SGDR)
 ```
 
-Argument Reference | eval
+Example
+```
+python3 main.py train \
+  -i 1 -c false -k True -d 8192 -x 100 -e 10 -b 32
+```
+
+### Argument Reference | eval
 
 ```
 -h, --help
@@ -54,12 +60,6 @@ Argument Reference | eval
 -s SAMPLE_RATE    target sample rate
 -a MAKE_AUDIO     bool, make audio or just spectrograms
 -c FROM_CKPT      bool, begin eval at last checkpoint
-```
-
-Example | train
-```
-python3 main.py train \
-  -i 1 -c false -k True -d 8192 -x 100 -e 10 -b 32
 ```
 
 Example | eval
