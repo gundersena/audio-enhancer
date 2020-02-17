@@ -56,3 +56,18 @@ Argument Reference | eval
 -c FROM_CKPT      bool, begin eval at last checkpoint
 ```
 
+Example
+
+Train
+```
+python3 main.py train \
+  -i 1 -c false -k True -d 8192 -x 100 -e 10 -b 32
+```
+
+Eval
+```
+python3 main.py train \
+  -i 1 -n 10 -w ../data/val-files.txt -r 4 -s 16000 -True -c False
+```
+
+
