@@ -1,7 +1,7 @@
 # AudioEnhancer
-Takes cruddy conference call audio and upsamples it to HD Audio
+A neural network capable of upsampling audio
 
-To read more about the research, visit https://crimata.com/AIPost
+This is the code repository for the research at https://crimata.com/AIPost
 
 ## Usage
 
