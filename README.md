@@ -11,7 +11,7 @@ Download dataset at https://homepages.inf.ed.ac.uk/jyamagis/page3/page58/page58.
 
 ### Repository Structure
 
-* `./data`: the data and the metadata (you should not need to touch this folder)
+* `./data`: the data and the metadata
 * `./main`: the model and its respective utilites
 * `./samples`: audio files and spectrograms generated from the neural net
 
